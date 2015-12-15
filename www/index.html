@@ -1,0 +1,474 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=0" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+        <title>STJOHNS</title> 
+
+    </head>
+    <body class="ui-mobile-viewport ui-overlay-a">
+    
+
+    <div style="min-height: 700px;" class="ui-page ui-page-theme-a" tabindex="0" data-url="arunhome" id="arunhome" class="current" data-role="page">
+
+        <div class="ui-header ui-bar-a" role="banner" data-role="header" data-theme="a" data-position="fixed">
+        <h1 aria-level="1" role="heading" class="ui-title"> STJOHNS </h1>
+        </div><!-- /header --> 
+     <div data-role="content">
+             
+     </div>
+    <div role="main">
+        <!--- <div class="content-primary"> -->
+        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-role="listview" data-inset="true">
+            
+            <li class="ui-first-child">
+
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r" type="button" name="homesubmit" id="homesubmit" value="Submit" style="color:#220BBA">
+                    <h2>Message</h2>
+                    <p>Notification about the student/grade/class</p>
+                <form id="check-mess" data-ajax="false">
+                    <input type="hidden" value="" name="usernameb" id="usernameb"/>
+                    <input type="hidden" value="" name="passwordb" id="passwordb"/>  
+                    <input type="hidden" value="" name="classb" id="classb"/>  
+                    <input type="hidden" value="" name="secb" id="secb"/>  
+                </form> 
+                 
+                </a> 
+ 
+            </li> 
+
+            <li class="ui-first-child">
+
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r" type="button" name="homeworksubmit" id="homeworksubmit" value="Submit"  style="color:#220BBA" >
+                   <h2>Home Work</h2>
+                    <p>Show daily home work portions</p>
+                <form id="check-homework" data-ajax="false">
+                    <input type="hidden" value="" name="usernamee" id="usernamee"/>
+                    <input type="hidden" value="" name="passworde" id="passworde"/>  
+                    <input type="hidden" value="" name="classe" id="classe"/>  
+                    <input type="hidden" value="" name="sece" id="sece"/>  
+                </form> 
+                 
+                </a>  
+                 
+            </li>
+            <li>
+
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r" type="button" name="foodsubmit" id="foodsubmit" value="Submit" style="color:#220BBA">
+                   <h2>Food Menu </h2>
+                    <p>Show food item details</p>
+                <form id="check-food" data-ajax="false">
+                    <input type="hidden" value="" name="usernamef" id="usernamef"/>
+                    <input type="hidden" value="" name="passwordf" id="passwordf"/>  
+                    <input type="hidden" value="" name="classf" id="classf"/>  
+                    <input type="hidden" value="" name="secf" id="secf"/>  
+                </form>  
+
+                </a>   
+ 
+            </li>
+            <!-- <li>
+              
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r" type="button" name="leavesubmit" id="leavesubmit" value="Submit" style="color:#220BBA">
+                   <h2>Leave Request</h2>
+                    <p>Parents/Students can request leave </p>
+                <form ac data-ajax="false">
+                    <input type="hidden" value="" name="usernameg" id="usernameg"/>
+                    <input type="hidden" value="" name="passwordg" id="passwordg"/>  
+                    <input type="hidden" value="" name="classg" id="classg"/>  
+                    <input type="hidden" value="" name="secg" id="secg"/>  
+                </form>  
+                </a>  
+            </li> -->
+
+            <li>
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r"href="#arunleave"  style="color:#220BBA">
+                   <h2>Leave Request</h2>
+                    <p>Parents/Students can request leave </p>
+                </a>  
+            </li>
+ 
+            <li>
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r" type="button" name="leavelistsubmit" id="leavelistsubmit" value="Submit" style="color:#220BBA">
+                   <h2>Leave Status</h2>
+                    <p>Parents can view the status of the leave request</p>
+                <form id="check-leavelist" data-ajax="false">
+                    <input type="hidden" value="" name="usernameo" id="usernameo"/>
+                    <input type="hidden" value="" name="passwordo" id="passwordo"/>  
+                    <input type="hidden" value="" name="classo" id="classo"/>  
+                    <input type="hidden" value="" name="seco" id="seco"/>  
+                </form> 
+                 
+                </a>  
+            </li>
+
+            <li>
+                
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r" type="button" name="reportsubmit" id="reportsubmit" value="Submit" style="color:#220BBA">
+                    <h2>Report Card</h2>
+                    <p>View Term Grade</p>
+                <form id="check-report" data-ajax="false">
+                    <input type="hidden" value="" name="usernameh" id="usernameh"/>
+                    <input type="hidden" value="" name="passwordh" id="passwordh"/>  
+                    <input type="hidden" value="" name="classh" id="classh"/>  
+                    <input type="hidden" value="" name="sech" id="sech"/>  
+                </form> 
+                 
+                </a>  
+            </li>
+            <li> 
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r" type="button" name="examsubmit" id="examsubmit" value="Submit" style="color:#220BBA">
+                    <h3>Exam Time Table </h3>
+                    <p>Exam Schedule - Time/Portions</p>
+                <form id="check-exam" data-ajax="false">
+                    <input type="hidden" value="" name="usernamei" id="usernamei"/>
+                    <input type="hidden" value="" name="passwordi" id="passwordi"/>  
+                    <input type="hidden" value="" name="classi" id="classi"/>  
+                    <input type="hidden" value="" name="seci" id="seci"/>  
+                </form> 
+                 
+                </a>  
+            </li>
+
+            <li>
+
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r" type="button" name="timesubmit" id="timesubmit" value="Submit" style="color:#220BBA">
+                    <h3>Class Time Table </h3>
+                    <p>Individual Class Time Table</p>
+                <form id="check-time" data-ajax="false">
+                    <input type="hidden" value="" name="usernamej" id="usernamej"/>
+                    <input type="hidden" value="" name="passwordj" id="passwordj"/>  
+                    <input type="hidden" value="" name="classj" id="classj"/>  
+                    <input type="hidden" value="" name="secj" id="secj"/>  
+                </form> 
+                 
+                </a>  
+                 
+            </li>
+
+            <li>  
+
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r arunpost" type="button" name="submit" id="submit" value="Submit" style="color:#220BBA">
+                    <h3>Year Calendar </h3>
+                    <p>Information about school functions, general  events, etc., </p>
+                 <form id="check-cal" data-ajax="false">
+                        <input type="hidden" value="" name="usernamea" id="usernamea"/>
+                         <input type="hidden" value="" name="passworda" id="passworda"/>  
+                </form> 
+                 
+                </a> 
+                 
+            </li>
+            
+             <li>
+                <a href="gallery.html" rel="external" style="color:#220BBA"> 
+                <!-- <a class="ui-btn ui-btn-icon-right ui-icon-carat-r"href="#albums_container"> -->
+                   <h3>Image Gallery </h3>
+                    <p>School Functions image gallery </p>
+                </a>  
+            </li>
+
+            <li>
+
+                <a class="ui-btn ui-btn-icon-right ui-icon-carat-r arunpost" type="button" name="prosubmit" id="prosubmit" value="Submit" style="color:#220BBA">
+                   <h3>Profile </h3>
+                    <p>Student Personal/Educational Details</p>
+                 <form id="check-pro" data-ajax="false">
+                        <input type="hidden" value="" name="usernamec" id="usernamec"/>
+                         <input type="hidden" value="" name="passwordc" id="passwordc"/>  
+                </form> 
+                 
+                </a> 
+            </li> 
+            
+            <li class="ui-last-child">
+
+                 <a class="ui-btn ui-btn-icon-right ui-icon-carat-r arunpost" type="button" name="logoutsubmit" id="logoutsubmit" value="Submit" style="color:#220BBA">
+                   <h3>Logout </h3>
+                    <p></p> 
+                 
+                </a> 
+ 
+            </li> 
+
+        </ul>
+        <!--/ </div> content-primary -->    
+    </div><!-- /content -->
+
+    <div class="ui-footer ui-bar-inherit" role="contentinfo" data-role="footer" data-position="fixed">
+            <p> &copy; www.themaxtech.com</p>
+    </div>
+
+    </div><!-- /page --> 
+
+
+
+        <div data-role="page" id="login" data-theme="a" class="app">
+        <div data-role="header" data-theme="a" id="deviceready"  data-position="fixed"> 
+            <h3>Parents Login</h3>
+        </div>
+  
+        <div data-role="content" data-theme="a">
+            <div class="head" style="text-align:center;">
+                        <img src="css/images/Smartlogo.png" alt="Logo"/>
+                        
+            </div>
+            <form id="check-user" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="username">Enter your username:</label>
+                        <input type="text" value="" name="username" id="username"/>
+                    </div>                                 
+                    <div data-role="fieldcontain">                                     
+                        <label for="password">Enter your password:</label>
+                        <input type="password" value="" name="password" id="password"/>
+                    </div>
+                    <input type="button" data-theme="b" name="submit" id="submit" value="Submit">
+                </fieldset>
+            </form>
+                        
+        </div>
+  
+        <div data-theme="a" data-role="footer" data-position="fixed">
+  
+        </div>
+        </div> 
+        
+
+
+
+    <div data-url="arunleave" id="arunleave" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Leave Request</h2>
+        </div><!-- /header -->
+        <div role="main"> 
+
+            <form id="check-leave" name="check-leave" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+            <fieldset>
+               <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label for="regnot">Reg No:</label>
+                    </div>                                 
+                    <div class="ui-block-b">
+                        <input class="ui-disabled" type="text" value="" name="regnot" id="regnot"/>
+                    </div>
+                </fieldset>                                     
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                       <label for="usernamet">Name:</label>
+                    </div>                                 
+                    <div class="ui-block-b">
+                        <input class="ui-disabled" type="text" value="" name="usernamet" id="usernamet"/>
+                    </div>
+                </fieldset>
+                <fieldset class="ui-grid-a">                                
+                    <div class="ui-block-a">
+                        <label for="clat">Class:</label>
+                    </div>                                 
+                    <div class="ui-block-b">
+                        <input class="ui-disabled"  type="text" value="" name="clat" id="clat"/>
+                    </div>
+                </fieldset>    
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label for="sect">Section:</label>
+                    </div>                                 
+                    <div class="ui-block-b">
+                        <input class="ui-disabled"  type="text" value="" name="sect" id="sect"/>
+                    </div>
+                </fieldset>    
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label for="datt">Date:</label>
+                    </div>                                 
+                    <div class="ui-block-b">
+                        <input class="ui-disabled"  type="text" value="" name="datt" id="datt"/>
+                    </div>
+                </fieldset>    
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label for="messt">Message:</label>
+                    </div>
+                </fieldset> 
+                <fieldset>                        
+                        <textarea name="messt" id="messt" rows="5" > </textarea>
+                          
+                </fieldset> 
+            </fieldset>
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a"></div>
+                    <div class="ui-block-b"><button type="submit" name="leavesubmit" id="leavesubmit" data-theme="b">Submit</button></div>  
+                 </fieldset>
+
+            </form>  
+                
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="test" id="test" data-role="page" data-theme="a">
+        <div data-role="header">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>ARUN Test</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="y_calendar" id="y_calendar" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Year Calendar</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="message" id="message" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Message</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="profile" id="profile" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Profile</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="homework" id="homework" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Home Work</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="foodmenu" id="foodmenu" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Food Menu</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="leavelist" id="leavelist" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Leave Status</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="reportcard" id="reportcard" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Report Card</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="examtimetable" id="examtimetable" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Exam Time Table</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div> 
+
+    <div data-url="classtimetable" id="classtimetable" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <a href="#arunhome" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+            <h2>Class Timetable</h2>
+        </div><!-- /header -->
+        <div role="main">  
+        <div id="result"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <p>  &copy;   www.themaxtech.com</p>
+        </div>
+    </div>  
+       <div id="arungallery"  data-role="page" data-theme="a">
+            <div class="toolbar">
+                <h1>Albums</h1>
+                <a class="button slideup" id="infoButton" href="#about">About</a>
+            </div>
+            <div class="loader" style="display:none;"></div>
+            <ul id="albums" class="edgetoedge" style="display:none;">
+            </ul>
+        </div>   
+    <div class="ui-loader ui-corner-all ui-body-a ui-loader-default">
+    <span class="ui-icon-loading"></span><h1>loading</h1></div>
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="PushNotification.js"></script> 
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+        <script>
+        $(document).on("mobileinit", function () {
+          $.mobile.hashListeningEnabled = false;
+          $.mobile.pushStateEnabled = false;
+          $.mobile.changePage.defaults.changeHash = false;
+        });
+        </script> 
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/jstorage.js"></script>
+        <script type="text/javascript" src="js/index.js"></script> 
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
+        
+    </body>
+</html>
